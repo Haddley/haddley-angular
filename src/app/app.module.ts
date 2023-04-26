@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AuthGuard } from './authguard';
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     provideAuth(() => getAuth()),
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
