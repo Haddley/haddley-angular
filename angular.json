@@ -100,6 +100,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "haddley-angular:build:production",
+            "firebaseProject": "haddley-firebase-e8e21",
+            "firebaseHostingSite": "haddley-firebase-e8e21"
+          }
         }
       }
     }

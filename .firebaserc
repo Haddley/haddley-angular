@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "haddley-firebase-e8e21": {
+      "hosting": {
+        "haddley-angular": [
+          "haddley-firebase-e8e21"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "haddley-firebase-e8e21"
+  }
+}
